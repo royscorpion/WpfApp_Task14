@@ -25,35 +25,37 @@ namespace WpfApp_Task14
         public MainWindow()
         {
             InitializeComponent();
-            products = new ObservableCollection<Product>();
-            products.Add(new Product()
+            products = new ObservableCollection<Product>
             {
-                ProductName = "Молоко",
-                ProductCost = 74.99,
-                ProductImage = "Data/milk.jpg",
-                ProductCategory = ProductCategories.Еда
-            });
-            products.Add(new Product()
-            {
-                ProductName = "Хлеб",
-                ProductCost = 29.99,
-                ProductImage = "Data/bread.jpg",
-                ProductCategory = ProductCategories.Еда
-            });
-            products.Add(new Product()
-            {
-                ProductName = "Чайник",
-                ProductCost = 1999,
-                ProductImage = "Data/electric_kettle.jpg",
-                ProductCategory = ProductCategories.БытоваяТехника
-            });
-            products.Add(new Product()
-            {
-                ProductName = "Чай черный",
-                ProductCost = 108.09,
-                ProductImage = "Data/tea_Curtis_SunnyLemon_20p.jpg",
-                ProductCategory = ProductCategories.ЧайКофеКакао
-            });
+                new Product()
+                {
+                    ProductName = "Молоко",
+                    ProductCost = 74.99,
+                    ProductImage = "Data/milk.jpg",
+                    ProductCategory = ProductCategories.Еда
+                },
+                new Product()
+                {
+                    ProductName = "Хлеб",
+                    ProductCost = 29.99,
+                    ProductImage = "Data/bread.jpg",
+                    ProductCategory = ProductCategories.Еда
+                },
+                new Product()
+                {
+                    ProductName = "Чайник",
+                    ProductCost = 1999,
+                    ProductImage = "Data/electric_kettle.jpg",
+                    ProductCategory = ProductCategories.БытоваяТехника
+                },
+                new Product()
+                {
+                    ProductName = "Чай черный",
+                    ProductCost = 108.09,
+                    ProductImage = "Data/tea_Curtis_SunnyLemon_20p.jpg",
+                    ProductCategory = ProductCategories.ЧайКофеКакао
+                }
+            };
             lstBox.ItemsSource = products;
         }
 
